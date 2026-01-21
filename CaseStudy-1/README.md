@@ -1,53 +1,29 @@
-# Online Quiz & Examination SPA (AI Enhanced 🚀)
+# CaseStudy-1: AI-Enhanced Quiz SPA
 
-Welcome to the **Next-Gen Online Quiz & Examination Platform**. I've taken this Single Page Application (SPA) to the next level by integrating cutting-edge AI, fluid animations, and a vibrant new design system.
+A high-energy, premium EdTech platform that leverages AI to generate dynamic quizzes and provide intelligent tutoring. This project showcases a "Hybrid UI" strategy combining the speed of Bootstrap with the interactive polish of Material UI.
 
-## 🚀 New Features
+## Key Features
 
-*   **🤖 AI Study Tutor**: A floating AI chatbot powered by **Ollama (DeepSeek-v3.1)**. It allows you to ask questions about your quiz topics in real-time, complete with a "thinking" trace.
-*   **✨ AI Quiz Generator**: I added a magic tool on the dashboard. Simply type a topic (e.g., "Quantum Physics"), and the AI will generate a fresh 3-question examination for you on the fly.
-*   **🎭 Fluid Animations**: Every page transition and quiz question now slide beautifully using **Framer Motion**.
-*   **🎨 Vibrant Theme**: I've overhauled the color scheme to a high-energy **Deep Purple & Neon Teal** palette with glassmorphic UI elements.
-*   **📊 Dynamic Leaderboard**: Clean slate! The leaderboard now tracks only your real local attempts.
+- **AI Quiz Generator**: Uses Ollama (DeepSeek-v3.1) to create structured quizzes from user prompts.
+- **AI Study Tutor**: A streaming chat session with "internal monologue" (thinking) display.
+- **Motion & Transitions**: Powered by Framer Motion for natively-smooth page and question transitions.
+- **Hybrid UI**: Combines Bootstrap 5 (Layout) + Material UI 6 (Interactions) + Framer Motion (Delight).
+- **Persistent State**: Automatic LocalStorage synchronization for quizzes and leaderboards.
 
----
+## Screenshots
+![AppPreview](./screenshot.png)
+<!-- TODO: Insert actual app screenshot here -->
 
-## 🛠️ The Tech Stack
+## Technical Architecture
 
-### 🧠 AI Integration (Ollama)
-I've integrated the `ollama` JS library to connect to local/cloud models.
-*   **DeepSeek-v3.1 Integration**: The system uses the `deepseek-v3.1:671b-cloud` model for both tutoring and quiz generation.
-*   **Streaming Logic**: The chatbot supports streaming responses, allowing you to see the AI's "thought process" as it works.
-
-### 🎭 Animation Framework (Framer Motion)
-*   **Page Transitions**: I used `AnimatePresence` to create smooth horizontal slides between the Login, Dashboard, and Quiz pages.
-*   **Hover Effects**: Quiz cards now lift and glow when you hover over them, giving the app a "lively" feel.
-
-### 🏢 UI Libraries (MUI & Bootstrap)
-*   ** metallurgy/MUI**: Used for complex icons (`MagicIcon`, `RobotIcon`), progress bars, and the AI chat interface.
-*   **Bootstrap**: Still handles the core responsive grid and high-level layout.
+| Layer | Technology |
+| :--- | :--- |
+| **Framework** | React 19 |
+| **Styling** | Bootstrap 5 + Material UI 6 |
+| **Animations** | Framer Motion |
+| **AI Engine** | Ollama (DeepSeek) |
+| **Validation** | Zod (Structured Output) |
+| **Routing** | HashRouter (GitHub Pages optimized) |
 
 ---
-
-## 📦 Getting Started
-
-1.  **Clone & Install**:
-    ```bash
-    git clone https://github.com/Adiptify/FULLSTACK_23BAI70412.git
-    npm install
-    ```
-2.  **Ollama Setup (CRITICAL)**:
-    Since the AI features run via Ollama, you must have Ollama installed and running. To allow the web app to talk to it, start Ollama with CORS enabled:
-    ```bash
-    $env:OLLAMA_ORIGINS="*"; ollama serve
-    ```
-3.  **Run**:
-    ```bash
-    npm run dev
-    ```
-
-## 🚀 Deployment
-```bash
-npm run deploy
-```
-*Hosted with ❤️ on GitHub Pages.*
+Developed by **Kumar Aditya**
