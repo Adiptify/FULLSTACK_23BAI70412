@@ -1,0 +1,10 @@
+Create a Counter App   
+That can interact with the user as per the button on + and - and the Counter should be displayed the value as per the user clicks on the button
+Create a Todo App
+that can add the data in the todo list with the user interaction
+Create a Theme Toggle App
+That can toggle between light and dark mode 
+Create a Form App
+That can register data in the proper format
+
+

@@ -1,0 +1,81 @@
+:root {
+  --font-main: "Outfit", system-ui, -apple-system, sans-serif;
+  --bg-color: white;
+  --text-color: black;
+  --accent-color: grey;
+  --spacing: clamp(1rem, 3vh, 2rem);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-main);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+.interface-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing);
+}
+
+.counter-btn {
+  background: grey;
+  border: 1px solid var(--accent-color);
+  color: var(--text-color);
+  font-size: clamp(2rem, 6vw, 4rem);
+  font-weight: 400;
+  padding: 1em 2em;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+  border-radius: 4px;
+  user-select: none;
+}
+
+.counter-btn:hover {
+  background-color: lightgrey;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.counter-btn:active {
+  transform: translateY(0);
+}
+
+.display-value {
+  font-size: clamp(6rem, 20vw, 12rem);
+  font-weight: 200;
+  line-height: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--accent-color);
+  background: grey;
+  width: 1.5em;
+  height: 1.5em;
+  aspect-ratio: 1 / 1;
+  border-radius: 4px;
+  margin-bottom: calc(var(--spacing) * 0.5);
+}
