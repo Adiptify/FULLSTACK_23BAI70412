@@ -1,35 +1,26 @@
-# Experiment-2: Advanced UI/UX Explorations
+# Exp-2: Advanced UI & Portfolio Projects
 
-This folder contains a collection of projects focusing on advanced layout strategies, styling frameworks (Bootstrap & Material UI), and professional portfolio design.
+A collection of projects showcasing advanced UI components, Material UI integrations, and portfolio designs.
 
-## Featured Projects
+## Projects Included
 
-### 1. Learning Bootstrap (/First)
-A clean implementation of a contact form and resource dropdown, focusing on Bootstrap's grid system and utility classes.
-
-### 2. Professional Portfolio (/Second/Second)
-A high-performance portfolio showcase for an AI Engineer Intern. It highlights:
-- Professional summary and experience.
-- Project showcases (Adiptify, RAG Knowledge System).
-- Responsive grid-based layout.
-
-### 3. Material UI Interactivity (/Third)
-Explores Material UI (MUI) components, specifically interactive buttons with loading transitions and dynamic state management.
-
-### 4. Responsive Showcase (/Four)
-A project scope and feature showcase featuring:
-- A "Never Expand" responsive Navbar.
-- Multi-card layout with varied content (Roadmaps, Project Scopes).
-- Shadow effects and micro-interactions.
+1. **First (/First)**
+   - Initial experiment with React layouts.
+2. **Second (/Second)**
+   - Advanced Bootstrap utility usage and grid systems.
+3. **Third (/Third)**
+   - Material UI component library integration and customization.
+4. **Four (/Four)**
+   - Dynamic UI transformations and Framer Motion animations.
 
 ## Screenshots
-![UIUXShowcase](./screenshot.png)
-<!-- TODO: Insert actual project screenshot here -->
+![Exp2Showcase](./screenshot.png)
 
-## Core Technologies
-- React (TSX/JSX)
-- Bootstrap 5 (Layout & Components)
-- Material UI (MUI 6) (Interactive Elements)
+## Tech Stack
+- React 19
+- Material UI
+- Bootstrap 5
+- Framer Motion
 
 ---
 Developed by **Kumar Aditya**
