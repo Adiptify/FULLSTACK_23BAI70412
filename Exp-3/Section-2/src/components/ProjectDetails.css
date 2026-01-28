@@ -1,0 +1,16 @@
+.project-tag {
+    background: transparent;
+    color: var(--text-main);
+    border: 1px solid #fff;
+    border-radius: 0;
+}
+
+.project-content h3 {
+    color: var(--text-main);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.project-points li::before {
+    color: #fff;
+}

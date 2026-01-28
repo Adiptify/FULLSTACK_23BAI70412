@@ -1,0 +1,88 @@
+.dashboard-header {
+    text-align: center;
+    margin-bottom: 6rem;
+}
+
+.dashboard-header h1 {
+    font-size: 3rem;
+    color: var(--text);
+    margin-bottom: 1rem;
+}
+
+.dashboard-header p {
+    font-size: 0.9rem;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+}
+
+.dashboard-cta {
+    margin-top: 10rem;
+    text-align: center;
+}
+
+.dashboard-cta h3 {
+    font-size: 0.8rem;
+    letter-spacing: 0.5rem;
+    margin-bottom: 2rem;
+    color: var(--text-dim);
+}
+
+.cta-btns {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.btn-primary,
+.btn-secondary {
+    padding: 1.25rem 4rem;
+    font-size: 0.7rem;
+    letter-spacing: 0.3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: var(--text);
+    color: var(--bg);
+    border: 1px solid var(--text);
+}
+
+.btn-primary:hover {
+    background: transparent;
+    color: var(--text);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: var(--text);
+    border: 1px solid var(--border-strong);
+}
+
+.btn-secondary:hover {
+    border-color: var(--text);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+@media (max-width: 768px) {
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-btns {
+        flex-direction: column;
+        align-items: center;
+    }
+}

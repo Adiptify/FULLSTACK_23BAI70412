@@ -1,0 +1,14 @@
+.home-landing {
+    margin-top: 100px;
+    /* More clearance for fixed navbar */
+}
+
+/* Ensure all sections are properly centered vertically */
+.section {
+    min-height: 80vh;
+    /* Better spacing for landing page feel */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10rem 0;
+}
