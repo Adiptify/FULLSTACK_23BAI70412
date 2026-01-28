@@ -1,4 +1,4 @@
-# Exp-3: Interactive Web Applications
+# Exp-3 Section-1: Basic SPA Routing
 
 A project focusing on interactive web elements, including dynamic lists, input handling, and modern CSS layouts.
 
