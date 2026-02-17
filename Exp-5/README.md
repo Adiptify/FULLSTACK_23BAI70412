@@ -11,14 +11,14 @@ Benefits
 3. Reduces the Memory Usage 
 ## Section-1
 Implementting in the Dashbaord with a loading time of 3 sec 
-## Screenshots
+### Screenshots
 <img src="./images/A.png" alt="Please Reload or go see images at Image section">   
 <img src="./images/B.png" alt="Please Reload or go see images at Image section">   
 <img src="./images/C.png" alt="Please Reload or go see images at Image section">   
 
 ## Section-2
 Implementting in the Dashbaord with a loading time of 2 sec in each and every page 
-## Screenshots
+### Screenshots
 <img src="./images/D.png" alt="Please Reload or go see images at Image section">   
 <img src="./images/E.png" alt="Please Reload or go see images at Image section">   
 <img src="./images/F.png" alt="Please Reload or go see images at Image section"> 
