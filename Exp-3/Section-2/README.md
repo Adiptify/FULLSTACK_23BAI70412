@@ -8,12 +8,9 @@ A project focusing on interactive web elements, including dynamic lists, input h
 - Responsive layout using Vite and React.
 
 ## Screenshots
-![Home Preview](./src/assets/Screenshot%202026-01-27%20114354.png)
-![Project Section](./src/assets/Screenshot%202026-01-27%20114442.png)
-![Details View](./src/assets/Screenshot%202026-01-27%20114500.png)
-![Mobile View 1](./src/assets/Screenshot%202026-01-27%20114522.png)
-![Mobile View 2](./src/assets/Screenshot%202026-01-27%20114537.png)
-
+<img src="./src/assets/1.png" alt="Alt text">   
+<img src="./src/assets/2.png" alt="Alt text">   
+<img src="./src/assets/3.png" alt="Alt text">   
 ## Tech Stack
 - React 19
 - Vite

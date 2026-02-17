@@ -1,0 +1,126 @@
+.footer {
+  padding: var(--space-lg) 0;
+  border-top: 1px solid var(--border);
+  text-align: center;
+}
+
+.footer p {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  letter-spacing: 0.1rem;
+}
+
+/* Ensure container wrapping in App.jsx */
+.footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
+
+:root {
+  --primary: #ffffff;
+  --bg: #000000;
+  --surface: #0a0a0a;
+  --border: #1a1a1a;
+  --border-strong: #333333;
+  --text: #ffffff;
+  --text-dim: #888888;
+
+  --primary-color: #646cff;
+  /* Keep for the loader */
+  --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.app-main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+.content {
+  flex: 1;
+  padding-top: 80px;
+  /* Navbar height */
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Ensure sections match the theme */
+.section {
+  padding: 6rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 80px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: calc(100vh - 80px);
+  background-color: var(--bg);
+  z-index: 2000;
+  gap: 20px;
+}
+
+.loading-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  text-align: center;
+  width: 100%;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+
+  0%,
+  100% {
+    opacity: 0.4;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+
+.dashboard-page {
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dashboard-header {
+  margin-top: 2rem;
+
+  margin-bottom: 4rem;
+}
+
+.dashboard-header h1 {
+  font-size: clamp(3rem, 10vw, 6rem) !important;
+  color: #ffffff !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+}
