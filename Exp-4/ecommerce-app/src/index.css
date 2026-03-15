@@ -1,0 +1,116 @@
+:root {
+  --navy: #003049;
+  --red: #D62828;
+  --orange: #F77F00;
+  --yellow: #FFD166;
+  
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --card-bg: #f9f9f9;
+  --border-color: #e0e0e0;
+  
+  --warm-gradient: linear-gradient(135deg, var(--navy), var(--red), var(--orange), var(--yellow));
+}
+
+html.dark {
+  --bg-color: #121212;
+  --text-color: #f1f1f1;
+  --card-bg: #1e1e1e;
+  --border-color: #333333;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+.gradient-text {
+  background: var(--warm-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-bg {
+  background: var(--warm-gradient);
+  color: white;
+}
+
+/* Base Layout */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.btn-primary {
+  background-color: var(--navy);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: var(--red);
+}
+
+.btn-secondary {
+  background-color: var(--orange);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.btn-secondary:hover {
+  background-color: var(--yellow);
+  color: var(--navy);
+}
+
+/* Grid */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem 0;
+}
+
+.card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+html.dark .card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
