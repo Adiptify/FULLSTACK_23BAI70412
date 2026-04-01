@@ -61,7 +61,7 @@ The API is exposed under the root path `/api/students` and provides the followin
 }
 ```
 #### Output Screenshot
-![GET Student by ID Output](asset/get.png)
+![GET Student by ID Output](https://github.com/Nischaya008/Full_Stack_II_CU/blob/main/Conduct%20Screenshots/8.2.png?raw=true)
 
 ---
 
@@ -73,12 +73,12 @@ The API is exposed under the root path `/api/students` and provides the followin
 ```json
 {
   "id": 2,
-  "name": "Kumar Aditya",
-  "course": "Artificial Engineer"
+  "name": "Alice Smith",
+  "course": "Information Technology"
 }
 ```
 #### Output Screenshot
-![POST Add Student Output](asset/post.png)
+![POST Add Student Output](https://github.com/Nischaya008/Full_Stack_II_CU/blob/main/Conduct%20Screenshots/8.3.png?raw=true)
 
 ---
 
@@ -90,18 +90,24 @@ The API is exposed under the root path `/api/students` and provides the followin
 ```json
 {
   "id": 2,
-  "name": "Kumar Aditya",
-  "course": "Artificial Intelligence"
+  "name": "Alice Smith",
+  "course": "Software Engineering"
 }
 ```
 #### Output Screenshot
-![PUT Update Student Output](asset/put.png)
+![PUT Update Student Output](https://github.com/Nischaya008/Full_Stack_II_CU/blob/main/Conduct%20Screenshots/8.4.png?raw=true)
 
 ---
 
+### 5. Delete a Student (DELETE)
+**Endpoint:** `DELETE /api/students/{id}`  
+**Description:** Removes a student record from the database by `id`.
+
+**Response Example (DELETE ID: 2):**
+*(Returns a success string or HTTP 200 OK depending on the service implementation)*
 
 #### Output Screenshot
-![DELETE Student Output](asset/get2.png)
+![DELETE Student Output](https://github.com/Nischaya008/Full_Stack_II_CU/blob/main/Conduct%20Screenshots/8.5.png?raw=true)
 
 ## How to Run the Project
 1. Open MySQL Command Line Client or MySQL Workbench and run the commands found in `setup_db.sql` to initialize the database `chandigarh_university`.
